@@ -1,7 +1,6 @@
 ---
 import Section from "./Section.astro"
 import { work } from "@/data/cv.json"
-
 import HTML from "@/icons/html.astro"
 import CSS from "@/icons/css.astro"
 import JavaScript from "@/icons/javascript.astro"
@@ -13,6 +12,9 @@ import Git from "@/icons/git.astro"
 import GitHub from "@/icons/GitHub.astro"
 import Tailwind from "@/icons/tailwind.astro"
 import Next from "@/icons/next.astro"
+import PostgreSQL from "@/icons/PostgreSQL.astro"
+import Supabase from "@/icons/Supabase.astro"
+import MongoDB from "@/icons/MongoDB.astro"
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -25,20 +27,20 @@ const SKILLS_ICONS: Record<string, any> = {
   Git,
   GitHub,
   Next,
-  Tailwind
+  Tailwind,
+  PostgreSQL,
+  Supabase,
+  MongoDB
 }
 ---
-<Section className={Astro.props.className} title="Experiencia">
-  <ul class="flex flex-col">
+<Section id="experience" className={Astro.props.className} title="Experiencia">
+  <ul class="flex flex-col gap-2 md:gap-0">
     {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
-      const startYear = new Date(startDate).getFullYear()
-      const endYear = endDate != null ? new Date(endDate).getFullYear() : "Presente"
-
       return (
         <li class="relative print:py-2">
           <div class="group relative grid pb-1 print:pb-0 transition-all print:grid-cols-1 print:gap-1 sm:grid-cols-12 sm:gap-8 md:gap-6 lg:hover:!opacity-100 ">
             <header class="relative mt-1 text-xs font-semibold sm:col-span-2">
-              <time datetime={startDate} data-title={startDate}>{startYear}</time> - <time datetime={endDate} data-title={endDate}>{endYear}</time>
+              {startDate} <span class="text-skin-hue">-</span> {endDate !== null ? endDate : "Presente"}
             </header>
             <div class="relative flex flex-col pb-6 print:pb-0 before:-ml-6 sm:col-span-10 before:w-px print:before:hidden before:absolute before:bg-skin-muted before:h-full before:mt-2">
             <div class="absolute w-2 h-2 bg-skin-muted rounded-full mt-2 -translate-x-[1.71rem] ring print:hidden ring-skin-fill"></div>
@@ -48,7 +50,7 @@ const SKILLS_ICONS: Record<string, any> = {
                   {url ? (
                     <a class="text-skin-hue" href={url} title={`Ver ${name}`} target="_blank">{name}</a>
                   ) : (
-                    <span>{name}</span>
+                    <span class="text-skin-hue">{name}</span>
                   )}
                   {url &&
                     <span class="inline-block text-skin-hue print:[&>svg]:hidden">
@@ -82,7 +84,7 @@ const SKILLS_ICONS: Record<string, any> = {
                 )}
 
                 {(responsibilities || achievements) &&  (
-                <div class="md:after:from-[rgb(var(--color-fill))] dark:md:after:to-skin-hue/0 flex relative flex-col max-sm:!h-auto print:!h-auto gap-4 print:gap-2 md:after:bg-gradient-to-t md:after:absolute md:after:bottom-0 md:after:w-full print:after:hidden md:after:h-12 md:after:content-[''] " :class="expanded ? 'after:hidden' : ''" x-show="expanded" x-collapse.min.50px>
+                <div class="after:from-[rgb(var(--color-fill))] dark:after:to-skin-hue/0 flex relative flex-col gap-4 print:gap-2 after:bg-gradient-to-t after:absolute after:bottom-0 after:w-full after:h-12 after:content-[''] " :class="expanded ? 'after:hidden' : ''" x-show="expanded" x-collapse.min.50px>
                 {responsibilities && (
                   <div class="flex flex-col gap-1">
                     <h4>Responsabilidades:</h4>
@@ -115,9 +117,10 @@ const SKILLS_ICONS: Record<string, any> = {
                 <ul class="flex print:hidden flex-wrap gap-2" aria-label="Technologies used">
                   {skills && skills.map(skill => {
                     let iconName = skill === "Next.js" ? "Next" : skill
-                    iconName = skill === "Tailwind CSS" ? "Tailwind" : skill
+                    iconName = skill === "Tailwind CSS" ? "Tailwind" : iconName
 
                     const Icon = SKILLS_ICONS[iconName]
+                    
                     return (
                       <li class="bg-[rgb(var(--color-button-accent))]/10 border-[rgb(var(--color))]/20 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs">
                         {Icon && <Icon />} <span>{skill}</span>
