@@ -1,8 +1,23 @@
 ---
-const { className, title } = Astro.props;
+const { className, title, id } = Astro.props;
+import ProfileCheck from "@/icons/ProfileCheck.astro"
+import Briefcase from "@/icons/Briefcase.astro"
+import Code from "@/icons/Code.astro"
+import Education from "@/icons/Education.astro"
+import Skills from "@/icons/Skills.astro"
+
+const ICONS: Record<string, any> = {
+  "Sobre mí": ProfileCheck,
+  "Experiencia": Briefcase,
+  "Proyectos": Code,
+  "Educación": Education,
+  "Skills": Skills
+}
+
+const Icon = ICONS[title]
 ---
 
-<section class:list={["flex flex-col gap-4 print:gap-0", className]}>
-	{title && <h3 class="relative flex w-full items-center gap-3 pb-4 text-3xl print:gap-1 print:pb-0 print:text-xl">{title}</h3>}
+<section id={id} class:list={["flex flex-col gap-4 print:gap-0", className]}>
+	{title && <h3 class="relative flex w-full items-center gap-3 pb-4 text-3xl print:gap-1 print:pb-0 print:text-xl font-semibold">{Icon && <Icon class="text-skin-hue" />} {title}</h3>}
 	<slot />
 </section>

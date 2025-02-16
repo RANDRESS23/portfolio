@@ -1,46 +1,161 @@
 ---
 import Theme from "@/icons/themeSwitch.astro";
+import { basics } from "@/data/cv.json";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import Phone from "@/icons/Phone.astro";
+import Mail from "@/icons/Mail.astro";
+import CV from "@/icons/CV.astro";
+import type { SocialIcon } from "@/types/cv";
+
+const { name, profiles, phone, email } = basics;
+
+const SOCIAL_ICONS: SocialIcon = {
+	GitHub,
+	LinkedIn
+};
 ---
 
-<div class="no-print inline-flex items-center">
-	<div class="group/theme flex items-center gap-2">
-		<label for="themeSwitch" class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45"> <Theme /></label>
-		<select id="themeSwitch" name="themeSwitch" class="focus:ring-[rgb(var(--color))] ring-[rgb(var(--muted))] block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset focus:ring-2 sm:text-sm sm:leading-6 bg-skin-fill outline-none">
-			<option value="system">System</option>
-			<option value="dark">Dark</option>
-			<option value="light">Light</option>
-		</select>
-	</div>
+<div class="flex flex-col md:flex-row-reverse md:items-center md:justify-center gap-3 mt-7 md:mt-0">
+  <footer class="no-print">
+    {
+      email && (
+        <div x-data=`{ copyText: '${email}', copyNotification: false, copyToClipboard() { navigator.clipboard.writeText(this.copyText); this.copyNotification = true; let that = this; setTimeout(function(){ that.copyNotification = false; }, 3000); } }` class="relative flex items-center">
+          <div x-show="copyNotification" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-3" x-transition:enter-end="opacity-100 translate-x-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-x-0" x-transition:leave-end="opacity-0 translate-y-2" style="display:none;" class="absolute left-0" x-cloak>
+            <div class="-mt-1.5 flex h-7 -translate-y-full items-center rounded border-r border-green-500 bg-green-500 px-3 text-xs text-white">
+              <span class="!text-white">Copiado!</span>
+              <div class="absolute left-0 bottom-0 inline-block h-full translate-x-full translate-y-5 overflow-hidden">
+                <div class="h-3 w-3 origin-center rotate-45 transform border border-transparent bg-green-500" />
+              </div>
+            </div>
+          </div>
+          <button @click="copyToClipboard();" class="group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-muted hover:bg-skin-button-accent hover:text-skin-inverted">
+            <svg x-show="copyNotification" class="h-4 w-4 stroke-current text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" x-cloak>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            <div x-show="!copyNotification" class="group-hover:text-skin-inverted duration-300">
+              <Mail />
+            </div>
+          </button>
+        </div>
+      )
+    }
+    {
+      phone && (
+        <a href={`tel:${phone}`} title={`Call ${name} at ${phone}`} target="_blank" rel="noopener noreferrer">
+          <Phone />
+        </a>
+      )
+    }
+    {
+      profiles.map(({ network, url }) => {
+        const Icon = SOCIAL_ICONS[network];
+  
+        return (
+          <a href={url} title={`Visit ${name} profile on ${network}`} target="_blank" rel="noopener noreferrer">
+            <Icon />
+          </a>
+        );
+      })
+    }
 
-	<style>
-		:global(.dark) {
-			color-scheme: dark;
-		}
-	</style>
-
-	<script>
-		const select = document.getElementById("themeSwitch") as HTMLSelectElement;
-		const theme = localStorage.getItem("theme");
-		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-
-		if (theme !== null) {
-			select.value = theme;
-		} else {
-			select.value = systemTheme;
-		}
-
-		function updateTheme(value: string) {
-			const theme = value === "system" ? systemTheme : value;
-			document.documentElement.classList.remove("light", "dark");
-			document.documentElement.classList.add(theme);
-			localStorage.setItem("theme", value);
-		}
-
-		updateTheme(select.value);
-
-		select.addEventListener("change", (event: Event) => {
-			const select = event.target as HTMLSelectElement;
-			updateTheme(select.value);
-		});
-	</script>
+    <button class="cursor-pointer" title="Descargar CV" aria-label="Descargar CV" onclick="window.open('/cv.pdf', '_blank')">
+      <CV />
+    </button>
+  </footer>
+  <div class="no-print inline-flex items-center">
+    <div class="group/theme flex items-center gap-2">
+      <label for="themeSwitch" class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45"> <Theme /></label>
+      <select id="themeSwitch" name="themeSwitch" class="focus:ring-[rgb(var(--color))] ring-[rgb(var(--muted))] block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset focus:ring-2 sm:text-sm sm:leading-6 bg-skin-fill outline-none">
+        <option value="system">System</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+    </div>
+  
+    <style>
+      :global(.dark) {
+        color-scheme: dark;
+      }
+    </style>
+  
+    <script>
+      const select = document.getElementById("themeSwitch") as HTMLSelectElement;
+      const theme = localStorage.getItem("theme");
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  
+      if (theme !== null) {
+        select.value = theme;
+      } else {
+        select.value = systemTheme;
+      }
+  
+      function updateTheme(value: string) {
+        const theme = value === "system" ? systemTheme : value;
+        document.documentElement.classList.remove("light", "dark");
+        document.documentElement.classList.add(theme);
+        localStorage.setItem("theme", value);
+      }
+  
+      updateTheme(select.value);
+  
+      select.addEventListener("change", (event: Event) => {
+        const select = event.target as HTMLSelectElement;
+        updateTheme(select.value);
+      });
+    </script>
+  </div>
 </div>
+<style>
+  @reference "../styles/global.css";
+  
+	.info {
+		@apply flex flex-col gap-1 pr-8 print:gap-0 print:pr-0;
+	}
+
+	h1 {
+		@apply text-4xl font-bold print:text-3xl;
+	}
+
+	h2 {
+		@apply text-balance text-base text-skin-muted print:text-lg;
+	}
+
+	img {
+		@apply aspect-square w-32 rounded-2xl bg-cover;
+	}
+
+	span {
+		@apply flex items-center gap-1 text-xs text-skin-hue ;
+	}
+
+	footer {
+		@apply mt-2 flex gap-1 text-sm ;
+	}
+
+	footer a, footer button {
+		@apply inline-flex size-8 items-center justify-center rounded-md p-1 transition-all duration-500 ease-linear text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted;
+	}
+
+	@media (width <= 700px) {
+		.container {
+			flex-direction: column-reverse;
+		}
+
+		.info {
+			@apply md:items-center md:justify-center pr-0 ;
+		}
+
+		figure {
+			@apply flex md:items-center md:justify-center;
+		}
+
+		h2 {
+			text-wrap: balance;
+		}
+
+		figure {
+			@apply md:mx-auto;
+		}
+	}
+</style>
