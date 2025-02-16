@@ -1,5 +1,61 @@
 @import "tailwindcss";
 
+@layer components {
+  .mouse-aura {
+    @apply fixed inset-0 pointer-events-none;
+    background-image: radial-gradient(
+      circle at var(--mouse-x) var(--mouse-y),
+      rgba(var(--color), 0.3) 0%,
+      rgba(var(--color), 0.15) 10%,
+      rgba(var(--color), 0) 25%
+    );
+
+    /* Media query for touch devices */
+    @media (hover: none) and (pointer: coarse) {
+      background-image: radial-gradient(
+        circle at top left,
+        rgba(var(--color), 0.3) 0%,
+        rgba(var(--color), 0.15) 10%,
+        rgba(var(--color), 0) 25%
+      );
+    }
+  }
+}
+
+.nav-indicator {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1rem;
+  height: 1px;
+  width: 2rem;
+  background-color: #64748b;
+  transition: all 0.15s ease-in-out;
+}
+
+.group:hover .nav-indicator,
+.group:focus-within .nav-indicator {
+  width: 4rem;
+  height: 2px;
+  background-color: #0d1426;
+}
+
+.nav-indicator.active,
+.group .nav-indicator.active {
+  width: 4rem;
+  height: 2px;
+  background-color: #0d1426;
+}
+
+.dark .group:hover .nav-indicator,
+.dark .group:focus-within .nav-indicator {
+  background-color: #e2e8f0;
+}
+
+.dark .nav-indicator.active,
+.dark .group .nav-indicator.active {
+  background-color: #e2e8f0;
+}
+
 @layer base {
   :root {
     --color-text-base: 0, 0, 0;
