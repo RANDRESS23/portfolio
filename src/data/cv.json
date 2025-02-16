@@ -1,0 +1,391 @@
+{
+  "basics": {
+    "name": "Raúl Quimbaya",
+    "label": "Desarrollador Web",
+    "image": "/foto-perfil.webp",
+    "email": "raulquimbaya4@gmail.com",
+    "phone": "+57 3153090045",
+    "url": "https://stivimoon.dev",
+    "summary": "Apasionado desarrollador web con una sólida formación tecnológica y una mentalidad orientada a la innovación. Con experiencia en el desarrollo de aplicaciones y sitios web, poseo habilidades destacadas en la creación de soluciones tecnológicas efectivas y amigables para el usuario. Mi capacidad para abordar desafíos técnicos complejos me ha permitido entregar proyectos exitosos en entornos dinámicos y colaborativos.",
+    "theme": "modern",
+    "location": {
+      "city": "Espinal",
+      "region": "Tolima",
+      "countryCode": "COL"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Raúl Quimbaya",
+        "url": "https://www.linkedin.com/in/raul-quimbaya/"
+      },
+      {
+        "network": "GitHub",
+        "username": "RANDRESS23",
+        "url": "https://github.com/RANDRESS23"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "No Country",
+      "position": "Desarrollador Front-End",
+      "location_type": "Remoto",
+      "location": "Espinal, Colombia",
+      "url": "",
+      "startDate": "Enero 2025",
+      "endDate": "Febrero 2025",
+      "summary": "Participé como desarrollador front-end en una simulación laboral de No Country con el MVP 'Reclutalent', una plataforma de reclutamiento y selección de personal. Mi rol se enfocó en la implementación de las interfaces para reclutadores y candidatos, asegurando una experiencia fluida e intuitiva.",
+      "highlights": [
+        "Desarrollo de interfaces para reclutadores y candidatos utilizando React.js.",
+        "Implementación de funcionalidades clave como publicación de ofertas, gestión de candidatos y seguimiento de aplicaciones.",
+        "Integración con la API desarrollada en Python/Django, consumiendo endpoints documentados.",
+        "Optimización de la experiencia del usuario para una navegación intuitiva y eficiente."
+      ],
+      "responsibilities": [
+        "Diseñar y desarrollar la interfaz de usuario para los roles de reclutador y candidato.",
+        "Implementar la lógica de negocio en el frontend para la publicación de ofertas y gestión de postulaciones.",
+        "Realizar la integración con la API REST desarrollada en Django, asegurando la correcta comunicación entre frontend y backend.",
+        "Optimizar el rendimiento y la accesibilidad de la aplicación.",
+        "Colaborar con el equipo de backend para garantizar la correcta implementación de los flujos de datos."
+      ],
+      "achievements": [
+        "Entrega exitosa del MVP con una interfaz funcional y responsive.",
+        "Implementación de un diseño intuitivo que facilita la interacción de los usuarios.",
+        "Integración eficiente con la API en Django, reduciendo tiempos de desarrollo y mejorando la comunicación entre frontend y backend."
+      ],
+      "skills": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Git", "GitHub"]
+    },
+    {
+      "name": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
+      "position": "Desarrollador Web",
+      "location_type": "Remoto",
+      "location": "Espinal, Colombia",
+      "url": "",
+      "startDate": "Febrero 2023",
+      "endDate": "Agosto 2024",
+      "summary": "Desarrollé un aplicativo web funcional y escalable para la gestión de almuerzos en el Instituto Tolimense de Formación Técnica Profesional (ITFIP), optimizando el manejo de roles y la integración con bases de datos en la nube como proyecto de grado para la Tecnología en Gestión Informática.",
+      "highlights": [
+        "Diseño e implementación de módulos funcionales para mejorar la experiencia del usuario.",
+        "Modelado y configuración de la base de datos con PostgreSQL y Supabase para un almacenamiento eficiente.",
+        "Desarrollo de rutas API en Next.js para conectar la base de datos con la aplicación web."
+      ],
+      "responsibilities": [
+        "Diseñar e implementar módulos funcionales del aplicativo web.",
+        "Modelar y configurar la base de datos utilizando PostgreSQL y Supabase.",
+        "Desarrollar rutas API en Next.js para la integración con la base de datos.",
+        "Implementar un sistema de roles con permisos personalizados (estudiante, empleado, administrador).",
+        "Realizar pruebas exhaustivas para garantizar la calidad y funcionalidad del aplicativo."
+      ],
+      "achievements": [
+        "Optimización del flujo de trabajo mediante un sistema de permisos bien estructurado.",
+        "Aseguramiento de la calidad del aplicativo mediante pruebas rigurosas en cada módulo."
+      ],
+      "skills": ["HTML", "CSS", "Next.js", "PostgreSQL", "Supabase", "JavaScript", "React", "Tailwind CSS", "Git", "GitHub"]
+    },
+    {
+      "name": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
+      "position": "Desarrollador Web",
+      "location_type": "Remoto",
+      "location": "Espinal, Colombia",
+      "url": "",
+      "startDate": "Agosto 2023",
+      "endDate": "Diciembre 2023",
+      "summary": "Colaboré en el desarrollo de un sitio web para la gestión de finanzas educativas, optimizando la estructura de datos y la comunicación entre cliente y servidor en un entorno escalable.",
+      "highlights": [
+        "Desarrollo y personalización de módulos clave para la funcionalidad del sitio web.",
+        "Diseño y gestión de la base de datos en MongoDB Atlas para garantizar almacenamiento eficiente.",
+        "Implementación de rutas API en Next.js para mejorar la comunicación entre cliente y servidor."
+      ],
+      "responsibilities": [
+        "Trabajar en equipo para construir y personalizar los módulos clave del sitio web.",
+        "Diseñar y gestionar la estructura de la base de datos en MongoDB Atlas.",
+        "Implementar rutas API en Next.js para la comunicación entre cliente y servidor.",
+        "Configurar roles con diferentes niveles de acceso (usuario, administrador) para mejorar la experiencia del usuario.",
+        "Validar cada módulo mediante pruebas detalladas para asegurar el cumplimiento de los requerimientos técnicos."
+      ],
+      "achievements": [
+        "Optimización del flujo de trabajo en equipo mediante una arquitectura bien estructurada.",
+        "Garantía de un sitio web funcional y seguro a través de pruebas exhaustivas."
+      ],
+      "skills": ["HTML", "CSS", "Next.js", "MongoDB", "JavaScript", "React", "Tailwind CSS", "Git", "GitHub"]
+
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
+      "url": "",
+      "area": "Tecnólogo en Gestión Informática",
+      "studyType": "Tecnólogo",
+      "startDate": "Febrero 2023",
+      "endDate": "Agosto 2024",
+      "score": "5.0",
+      "courses": [
+        "Análisis y Diseño de Algoritmos (ADA)",
+        "Desarrollo Avanzado de Software (SO)",
+        "Bases de Datos (BD)"
+      ]
+    },
+    {
+      "institution": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
+      "url": "",
+      "area": "Técnico Profesional en Programación Web",
+      "studyType": "Tecnólogo",
+      "startDate": "Febrero 2021",
+      "endDate": "Diciembre 2022",
+      "score": "4.9",
+      "courses": [
+        "Desarrollo Avanzado de Software (SE201)",
+        "Arquitectura y Diseño de Software (SE202)"
+      ]
+    }
+  ],
+  "certificates": [],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Beginner",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Beginner",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "Astro",
+      "level": "Beginner",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "JavaScript",
+        "Server"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "Java",
+        "Server"
+      ]
+    },
+    {
+      "name": "Spring Boot",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "Java",
+        "Server"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Ingles",
+      "fluency": "Intermedio"
+    },
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Technology",
+      "keywords": [
+        "AI",
+        "Blockchain"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Valentina Reyes",
+      "reference": "Comunicadora Visual CEO de Studio Rosso"
+    }
+  ],
+  "projects": [
+    {
+      "name": "LunchFip",
+      "isActive": true,
+      "description": "Aplicativo web funcional y escalable para la gestión de almuerzos en el Instituto Tolimense de Formación Técnica Profesional (ITFIP), optimizando el manejo de roles y la integración con bases de datos en la nube como proyecto de grado para la Tecnología en Gestión Informática.",
+      "highlights": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "PostgreSQL", "Supabase", "Git", "GitHub"],
+      "img": "/lunchfip.webp",
+      "url": "https://www.lunchfip.online/",
+      "github": "https://github.com/RANDRESS23/lunchfip"
+    },
+    {
+      "name": "Finanzas Educativas",
+      "isActive": true,
+      "description": "Plataforma web con el fin de empoderar a las personas para que tomen el control de sus finanzas y alcancen la seguridad económica.",
+      "highlights": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "MongoDB", "Git", "GitHub"],
+      "img": "/finanzas-educativas.webp",
+      "url": "https://finanzas-educativas.vercel.app/",
+      "github": "https://github.com/RANDRESS23/finanzas-educativas"
+
+    },
+    {
+      "name": "Spotify Clone",
+      "isActive": true,
+      "description": "Clon de Spotify creado con Astro, donde también se hace uso de componentes de React.js y Svelte. Inclye funcionalidades como reproducción de música y listas de reproducción.",
+      "highlights": ["HTML", "CSS", "JavaScript", "Astro", "Tailwind CSS", "Git", "GitHub"],
+      "img": "/spotify-clone.webp",
+      "url": "https://spotify-clone-astro-2323.vercel.app/",
+      "github": "https://github.com/RANDRESS23/spotify-clone"
+    },
+    {
+      "name": "Tesla Landing Clone",
+      "isActive": true,
+      "description": "Este proyecto es un clon de la página de inicio de Tesla creada con React.js. Replica el diseño elegante y moderno de la página original utilizando Styled Components para el estilo.",
+      "highlights": ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Git", "GitHub"],
+      "img": "/tesla-landing-clone.webp",
+      "url": "https://tesla-clone-react-styled.vercel.app/",
+      "github": "https://github.com/RANDRESS23/tesla-clone"
+
+    },
+    {
+      "name": "Memory App Pokemon",
+      "isActive": true,
+      "description": "Este proyecto es un juego de memoria con temática de Pokémon creado con React.js. El juego cuenta con 18 cartas boca abajo y el usuario intenta hacer coincidir pares de Pokémon. También incluye un temporizador para registrar cuánto tiempo le toma al usuario completar el juego.",
+      "highlights": ["HTML", "CSS", "JavaScript", "React", "CSS Modules", "APIS", "Git", "GitHub"],
+      "img": "/memory-app-pokemon.webp",
+      "url": "https://memory-app-pokemon.vercel.app/",
+      "github": "https://github.com/RANDRESS23/memory-app-pokemon"
+
+    },
+    {
+      "name": "Rick and Morty App",
+      "isActive": true,
+      "description": "Aplicación React.js que permite a los usuarios buscar personajes del popular programa de televisión 'Rick and Morty'. Aprovecha la API de Rick and Morty para obtener datos de los personajes y utiliza Tailwind CSS para el estilo.",
+      "highlights": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "APIS", "Git", "GitHub"],
+      "img": "/rick-and-morty-app.webp",
+      "url": "https://rick-and-morty-app-find.vercel.app/",
+      "github": "https://github.com/RANDRESS23/rick-and-morty-app"
+
+    }
+  ]
+}
