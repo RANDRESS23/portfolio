@@ -5,23 +5,29 @@ import ThemeSwitch from '@/components/ThemeSwitch.astro';
 import About from '@/components/About.astro';
 import Experience from '@/components/Experience.astro';
 import Projects from '@/components/Projects.astro';
-
 import { basics } from "@/data/cv.json";
+import Navbar from '@/components/Navbar';
+import Skills from '@/components/Skills.astro';
+import Education from '@/components/Education.astro';
 const { name, label } = basics;
 ---
 
 <Layout title={`${name} Portafolio - ${label}`}>
-	<main class="relative grid max-w-7xl gap-12 p-8 max-sm:py-16 md:grid-cols-6 md:p-16 xl:gap-24 print:max-w-none print:grid-cols-1 print:gap-6">
-		<div class="space-y-6 md:col-span-2 print:col-span-1 print:grid print:grid-cols-2 print:gap-5 print:space-y-0">
-			<Hero />
+	<main class="relative grid max-w-7xl gap-12 px-8 max-sm:py-16 md:grid-cols-6 xl:gap-24 print:max-w-none print:grid-cols-1 print:gap-6 pb-10 md:pb-24">
+    <div class="space-y-6 md:col-span-2 print:col-span-1 print:grid print:grid-cols-2 print:gap-5 print:space-y-0 hidden md:block"></div>
+		<div class="space-y-6 md:col-span-2 print:col-span-1 print:grid print:grid-cols-2 print:gap-5 print:space-y-0 md:fixed md:pt-10 md:pb-7 md:pl-20 md:h-screen md:flex md:flex-col md:justify-between md:gap-3">
+      <div class="flex flex-col gap-12">
+        <Hero />
+        <Navbar client:visible />
+      </div>
 			<ThemeSwitch />
 		</div>
-		<div class="space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
+		<div class="space-y-12 md:col-span-4 md:pl-16 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
       <About />
-			<Experience className="print:col-span-3" />
-			<Projects className="print:hidden" />
-			<!-- <Skills className="print:hidden" /> -->
-			<!-- <Education className="order-first" /> -->
+			<Experience className="print:col-span-3 pt-10" />
+			<Projects className="print:hidden pt-10" />
+			<Skills className="print:hidden pt-10" />
+			<Education className="order-first pt-10" />
 		</div>
 		<!-- <Tail /> -->
 	</main>
