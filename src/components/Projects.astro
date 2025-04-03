@@ -17,12 +17,15 @@ import PostgreSQL from "@/icons/PostgreSQL.astro"
 import Supabase from "@/icons/Supabase.astro"
 import MongoDB from "@/icons/MongoDB.astro"
 import { default as AstroIcon } from "@/icons/Astro.astro"
+import Angular from "@/icons/Angular.astro";
+import Spring from "@/icons/Spring.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
   CSS,
   "Styled Components": CSS,
   "CSS Modules": CSS,
+  "SCSS": CSS,
   JavaScript,
   APIS: JavaScript,
   TypeScript,
@@ -31,9 +34,11 @@ const SKILLS_ICONS: Record<string, any> = {
   MySQL,
   Git,
   GitHub,
+  Angular,
   Next,
   Tailwind,
   PostgreSQL,
+  "Spring Boot": Spring,
   Supabase,
   MongoDB,
   Astro: AstroIcon
@@ -41,47 +46,58 @@ const SKILLS_ICONS: Record<string, any> = {
 ---
 
 <Section id="projects" className={Astro.props.className} title="Proyectos">
-	<div class="flex flex-col gap-5 group">
-		{
-			projects.map(({ url, img, description, highlights: skills, name, github }) => {
-				return (
-					<button data-project-button={url} id={name} role="contentinfo" class="md:hover:ring-[rgb(var(--muted))] ring-[rgb(var(--muted))] md:ring-transparent relative flex flex-col-reverse md:flex-row justify-start items-start rounded-md p-5 md:hover:shadow-sm shadow-sm md:shadow-none md:hover:ring-1 ring-1 md:ring-0 md:hover:bg-[rgb(var(--color-button-muted))]/50 bg-[rgb(var(--color-button-muted))]/50 md:bg-transparent md:group-hover:opacity-40 md:hover:!opacity-100 gap-5 transition-all duration-300 group/item cursor-pointer">
-            <img src={img} alt={name} class="aspect-video object-cover rounded border-2 border-[rgb(var(--muted))]/10 transition group-hover/item:border-[rgb(var(--muted))]/30 md:w-32 overflow-hidden" />
-						<div class="flex flex-col flex-1">
-              <div class="flex justify-between items-center relative w-full">
-                <div class="group-hover/item:text-skin-hue flex items-center gap-[6px] text-base decoration-dotted underline-offset-[5px]" title={`Ver ${name}`}>
-                  {name}
-                  <span class=" transition ease-linear group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5 group-hove/itemr:text-skin-hue">
-                    <Arrow />
-                  </span>
+  <div x-data="{ expanded: false }">
+    <div class="flex flex-col gap-5 group after:from-[rgb(var(--color-fill))] dark:after:to-skin-hue/0 relative print:gap-2 after:bg-gradient-to-t after:absolute after:bottom-0 after:w-full after:h-12 after:content-[''] " :class="expanded ? 'after:hidden' : ''" x-show="expanded" x-collapse.min.815px>
+      {
+        projects.map(({ url, img, description, highlights: skills, name, github, isActive }) => {
+          return (
+            <button data-project-button={url} id={name} role="contentinfo" class={`md:hover:ring-[rgb(var(--muted))] ring-[rgb(var(--muted))] md:ring-transparent relative flex flex-col-reverse md:flex-row justify-start items-start rounded-md p-5 md:hover:shadow-sm shadow-sm md:shadow-none md:hover:ring-1 ring-1 md:ring-0 md:hover:bg-[rgb(var(--color-button-muted))]/50 bg-[rgb(var(--color-button-muted))]/50 md:bg-transparent md:group-hover:opacity-40 md:hover:!opacity-100 gap-5 transition-all duration-300 group/item ${isActive && "cursor-pointer"}`}>
+              <div class={`absolute md:opacity-0 top-2 left-2 md:top-1.5 md:left-1.5 w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full md:group-hover/item:opacity-100 transition-opacity ${isActive ? "bg-green-500" : "bg-red-500"}`} />
+              <img src={img} alt={name} class="aspect-video object-cover rounded border-2 border-[rgb(var(--muted))]/10 transition group-hover/item:border-[rgb(var(--muted))]/30 md:w-32 overflow-hidden" />
+              <div class="flex flex-col flex-1">
+                <div class="flex justify-between items-center relative w-full">
+                  <div class={`${isActive && "group-hover/item:text-skin-hue"} flex items-center gap-[6px] text-base decoration-dotted underline-offset-[5px]`} title={`Ver ${name}`}>
+                    {name}
+                    {
+                      isActive && (
+                        <span class={`${isActive && "group-hover/item:text-skin-hue group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5"} transition ease-linear`}>
+                          <Arrow />
+                        </span>
+                      )
+                    }
+                  </div>
+                  
+                  <a href={github} target="_blank" rel="noopener" title={`Ver el repositorio de ${name} en GitHub`} class="opacity-75 transition-opacity duration-200 hover:opacity-100 hover:text-skin-hue cursor-pointer z-50">
+                    <Git width="19" height="19" />
+                  </a>
                 </div>
                 
-                <a href={github} target="_blank" rel="noopener" title={`Ver el repositorio de ${name} en GitHub`} class="opacity-75 transition-opacity duration-200 hover:opacity-100 hover:text-skin-hue cursor-pointer z-50">
-                  <Git width="19" height="19" />
-                </a>
+                <p class="py-3 text-skin-muted mb-1 -mt-1 text-left">{description}</p>
+  
+                <ul class="flex print:hidden flex-wrap gap-2" aria-label="Technologies used">
+                  {skills.map(skill => {
+                    let iconName = skill === "Next.js" ? "Next" : skill
+                    iconName = skill === "Tailwind CSS" ? "Tailwind" : iconName
+  
+                    const Icon = SKILLS_ICONS[iconName]
+                    return (
+                      <li class="bg-[rgb(var(--color-button-accent))]/10 border-[rgb(var(--color))]/20 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs">
+                        {Icon && <Icon />} <span>{skill}</span>
+                      </li>
+                    )
+                  })}
+                </ul>
               </div>
-						  
-              <p class="py-3 text-skin-muted mb-1 -mt-1 text-left">{description}</p>
-
-              <ul class="flex print:hidden flex-wrap gap-2" aria-label="Technologies used">
-                {skills.map(skill => {
-                  let iconName = skill === "Next.js" ? "Next" : skill
-                  iconName = skill === "Tailwind CSS" ? "Tailwind" : iconName
-
-                  const Icon = SKILLS_ICONS[iconName]
-                  return (
-                    <li class="bg-[rgb(var(--color-button-accent))]/10 border-[rgb(var(--color))]/20 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs">
-                      {Icon && <Icon />} <span>{skill}</span>
-                    </li>
-                  )
-                })}
-              </ul>
-						</div>
-					</button>
-				)
-			})
-		}
-	</div>
+            </button>
+          )
+        })
+      }
+    </div>
+    <button @click="expanded = ! expanded" class="print:hidden group/more w-fit cursor-pointer items-center justify-center gap-1.5 text-xs underline text-skin-muted transition-all hover:text-skin-base flex mx-auto mt-7">
+      <span x-text="expanded ? 'Ver menos proyectos' : 'Ver más proyectos'">Mostrar más proyectos</span>
+      <svg class="w-4 h-4 group-hover/more:translate-y-0.5 duration-200 ease-out" :class="{ 'rotate-180': expanded }" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </button>
+  </div>
 </Section>
 
 <style>
@@ -105,17 +121,6 @@ const SKILLS_ICONS: Record<string, any> = {
 		font-size: 0.6rem;
 		font-weight: 500;
 		padding: 0.2rem 0.6rem;
-	}
-	@keyframes flicker {
-		0% {
-			opacity: 1;
-		}
-		50% {
-			opacity: 0.25;
-		}
-		100% {
-			opacity: 1;
-		}
 	}
 </style>
 
