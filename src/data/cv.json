@@ -333,7 +333,7 @@
       "name": "LunchFip",
       "isActive": true,
       "description": "Aplicativo web funcional y escalable para la gestión de almuerzos en el Instituto Tolimense de Formación Técnica Profesional (ITFIP), optimizando el manejo de roles y la integración con bases de datos en la nube como proyecto de grado para la Tecnología en Gestión Informática.",
-      "highlights": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "PostgreSQL", "Supabase", "Git", "GitHub"],
+      "highlights": ["HTML", "CSS", "TypeScript", "React", "Next.js", "Tailwind CSS", "PostgreSQL", "Supabase", "Git", "GitHub"],
       "img": "/lunchfip.webp",
       "url": "https://www.lunchfip.online/",
       "github": "https://github.com/RANDRESS23/lunchfip"
@@ -341,11 +341,21 @@
     {
       "name": "Finanzas Educativas",
       "isActive": true,
-      "description": "Plataforma web con el fin de empoderar a las personas para que tomen el control de sus finanzas y alcancen la seguridad económica.",
-      "highlights": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "MongoDB", "Git", "GitHub"],
+      "description": "Plataforma web con el fin de empoderar a las personas para que tomen el control de sus finanzas y alcancen la seguridad económica. Cuenta con un sistema de autenticación, roles de usuario, y un dashboard para el administrador.",
+      "highlights": ["HTML", "CSS", "TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB", "Git", "GitHub"],
       "img": "/finanzas-educativas.webp",
       "url": "https://finanzas-educativas.vercel.app/",
       "github": "https://github.com/RANDRESS23/finanzas-educativas"
+
+    },
+    {
+      "name": "Smart Comanda",
+      "isActive": true,
+      "description": "Plataforma web para la gestión eficiente de comandas en el local 'Ronal Pizzas' del municipio de Flandes - Tolima. Donde cuenta con un sistema de autenticación, roles de usuario, un dashboard para el administrador y el cajero, y un apartado para que los meseros tomen las comandas a los clientes.",
+      "highlights": ["HTML", "CSS", "TypeScript", "React", "Next.js", "Tailwind CSS", "PostgreSQL", "Supabase", "Git", "GitHub"],
+      "img": "/smart-comanda.webp",
+      "url": "https://smart-comanda.vercel.app/",
+      "github": "https://github.com/RANDRESS23/smart-comanda"
 
     },
     {
@@ -356,6 +366,16 @@
       "img": "/spotify-clone.webp",
       "url": "https://spotify-clone-astro-2323.vercel.app/",
       "github": "https://github.com/RANDRESS23/spotify-clone"
+    },
+    {
+      "name": "Emazon",
+      "isActive": false,
+      "description": "Ecommerce web para la venta de productos y accesorios. Fue un proyecto realizado durante el bootcamp 'Power Up' de Pragma. Su Frontend fue creado con Angular y su Backend con Spring Boot utilizando microservicios para la gestión de inventario y pedidos.",
+      "highlights": ["HTML", "CSS", "TypeScript", "Angular", "SCSS", "Spring Boot", "MySQL", "Git", "GitHub"],
+      "img": "/emazon.webp",
+      "url": "",
+      "github": "https://github.com/RANDRESS23/emazon"
+
     },
     {
       "name": "Tesla Landing Clone",
