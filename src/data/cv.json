@@ -335,7 +335,7 @@
       "description": "Aplicativo web funcional y escalable para la gestión de almuerzos en el Instituto Tolimense de Formación Técnica Profesional (ITFIP), optimizando el manejo de roles y la integración con bases de datos en la nube como proyecto de grado para la Tecnología en Gestión Informática.",
       "highlights": ["HTML", "CSS", "TypeScript", "React", "Next.js", "Tailwind CSS", "PostgreSQL", "Supabase", "Git", "GitHub"],
       "img": "/lunchfip.webp",
-      "url": "https://www.lunchfip.online/",
+      "url": "https://lunchfip.vercel.app/",
       "github": "https://github.com/RANDRESS23/lunchfip"
     },
     {
