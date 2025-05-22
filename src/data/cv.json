@@ -330,6 +330,15 @@
   ],
   "projects": [
     {
+      "name": "Paletize",
+      "isActive": true,
+      "description": "Herramienta web que permite extraer automáticamente las paletas de colores utilizadas en cualquier repositorio público de GitHub. Es ideal para desarrolladores y diseñadores que desean conocer los colores que inspiran proyectos reales.",
+      "highlights": ["HTML", "CSS", "TypeScript", "React", "Next.js", "Tailwind CSS", "Git", "GitHub", "Clerk", "DeepSeek API"],
+      "img": "/paletize.webp",
+      "url": "https://paletize.vercel.app/",
+      "github": "https://github.com/RANDRESS23/paletize"
+    },
+    {
       "name": "LunchFip",
       "isActive": true,
       "description": "Aplicativo web funcional y escalable para la gestión de almuerzos en el Instituto Tolimense de Formación Técnica Profesional (ITFIP), optimizando el manejo de roles y la integración con bases de datos en la nube como proyecto de grado para la Tecnología en Gestión Informática.",
