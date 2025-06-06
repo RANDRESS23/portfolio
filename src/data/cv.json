@@ -333,7 +333,7 @@
       "name": "JSONLator",
       "isActive": true,
       "description": "Aplicación web desarrollada en Next.js que permite cargar, traducir y descargar archivos JSON fácilmente. Ideal para desarrolladores y equipos que necesitan traducir archivos JSON en diferentes idiomas.",
-      "highlights": ["HTML", "CSS", "TypeScript", "React", "Next.js", "Tailwind CSS", "Git", "GitHub", "Clerk", "DeepSeek API"],
+      "highlights": ["HTML", "CSS", "TypeScript", "React", "Next.js", "Tailwind CSS", "Git", "GitHub", "DeepSeek API"],
       "img": "/json-lator.webp",
       "url": "https://json-lator.vercel.app/",
       "github": "https://github.com/RANDRESS23/json-lator"
