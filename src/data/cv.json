@@ -379,7 +379,7 @@
     {
       "name": "Spotify Clone",
       "isActive": true,
-      "description": "Clon de Spotify creado con Astro, donde también se hace uso de componentes de React.js y Svelte. Inclye funcionalidades como reproducción de música y listas de reproducción.",
+      "description": "Clon de Spotify creado con Astro, donde también se hace uso de componentes de React.js y Svelte. Incluye funcionalidades como reproducción de música y listas de reproducción.",
       "highlights": ["HTML", "CSS", "JavaScript", "Astro", "Tailwind CSS", "Git", "GitHub"],
       "img": "/spotify-clone.webp",
       "url": "https://spotify-clone-astro-2323.vercel.app/",
