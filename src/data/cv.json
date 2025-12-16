@@ -1,12 +1,13 @@
 {
   "basics": {
     "name": "Raúl Quimbaya",
-    "label": "Desarrollador Web",
+    "label": "Ingeniero de Sistemas -",
+    "label2": "Frontend & Full Stack Developer",
     "image": "/foto-perfil.webp",
     "email": "raulquimbaya4@gmail.com",
     "phone": "+57 3153090045",
     "url": "https://stivimoon.dev",
-    "summary": "Apasionado desarrollador web con una sólida formación tecnológica y una mentalidad orientada a la innovación. Con experiencia en el desarrollo de aplicaciones y sitios web, poseo habilidades destacadas en la creación de soluciones tecnológicas efectivas y amigables para el usuario. Mi capacidad para abordar desafíos técnicos complejos me ha permitido entregar proyectos exitosos en entornos dinámicos y colaborativos.",
+    "summary": "Ingeniero de Sistemas con enfoque en desarrollo de aplicaciones web modernas. Experiencia en diseño e implementación de soluciones frontend y backend utilizando tecnologías como React, Next.js, Node.js, Spring Boot y bases de datos relacionales y no relacionales. Orientado a la creación de productos escalables, eficientes y centrados en el usuario, con experiencia trabajando en equipos colaborativos bajo metodologías ágiles.",
     "theme": "modern",
     "location": {
       "city": "Espinal",
@@ -116,10 +117,24 @@
     {
       "institution": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
       "url": "",
+      "area": "Ingeniero de Sistemas",
+      "studyType": "Tecnólogo",
+      "startDate": "Febrero 2021",
+      "endDate": "Diciembre 2025",
+      "score": "5.0",
+      "courses": [
+        "Análisis y Diseño de Algoritmos (ADA)",
+        "Desarrollo Avanzado de Software (SO)",
+        "Bases de Datos (BD)"
+      ]
+    },
+    {
+      "institution": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
+      "url": "",
       "area": "Tecnólogo en Gestión Informática",
       "studyType": "Tecnólogo",
-      "startDate": "Febrero 2023",
-      "endDate": "Agosto 2024",
+      "startDate": "Febrero 2021",
+      "endDate": "Junio 2024",
       "score": "5.0",
       "courses": [
         "Análisis y Diseño de Algoritmos (ADA)",
@@ -162,6 +177,46 @@
     },
     {
       "name": "JavaScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "Java",
+        "Server"
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Python",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
@@ -214,6 +269,16 @@
       ]
     },
     {
+      "name": "Tailwind",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
       "name": "Node",
       "level": "Intermediate",
       "keywords": [
@@ -224,12 +289,22 @@
       ]
     },
     {
-      "name": "Java",
+      "name": "Express.js",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
         "Backend",
-        "Java",
+        "JavaScript",
+        "Server"
+      ]
+    },
+    {
+      "name": "Laravel",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "JavaScript",
         "Server"
       ]
     },
@@ -244,7 +319,7 @@
       ]
     },
     {
-      "name": "MySQL",
+      "name": "PostgreSQL",
       "level": "Intermediate",
       "keywords": [
         "Databases",
@@ -254,7 +329,7 @@
       ]
     },
     {
-      "name": "PostgreSQL",
+      "name": "MySQL",
       "level": "Intermediate",
       "keywords": [
         "Databases",
@@ -274,13 +349,23 @@
       ]
     },
     {
-      "name": "Tailwind",
+      "name": "SQLite",
       "level": "Intermediate",
       "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Supabase",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
       ]
     },
     {
@@ -294,6 +379,26 @@
     },
     {
       "name": "GitHub",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "Jira",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "Docker",
       "level": "Intermediate",
       "keywords": [
         "Version Control",
