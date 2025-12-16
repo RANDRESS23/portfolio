@@ -20,15 +20,29 @@ import MongoDB from "@/icons/MongoDB.astro";
 import PostgreSQL from "@/icons/PostgreSQL.astro";
 import Java from "@/icons/java.astro";
 import Sql from "@/icons/sql.astro";
+import PHP from "@/icons/PHP.astro";
+import Python from "@/icons/Python.astro";
+import Express from "@/icons/Express.astro";
+import Laravel from "@/icons/Laravel.astro";
+import SQLite from "@/icons/SQLite.astro";
+import Supabase from "@/icons/Supabase.astro";
+import Jira from "@/icons/Jira.astro";
+import Docker from "@/icons/Docker.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
 	HTML,
 	CSS,
 	JavaScript,
 	TypeScript,
+    PHP,
+    Python,
 	React,
 	Node,
+    Express,
+    Laravel,
 	MySQL,
+    SQLite,
+    Supabase,
 	Git,
 	GitHub,
 	Next,
@@ -41,6 +55,8 @@ const SKILLS_ICONS: Record<string, any> = {
 	Spring,
 	MongoDB,
 	PostgreSQL,
+    Jira,
+    Docker
 };
 ---
 
@@ -50,6 +66,7 @@ const SKILLS_ICONS: Record<string, any> = {
 			skills.map(({ name }) => {
 				let iconName = name === "Next.js" ? "Next" : name;
 				iconName = name === "Spring Boot" ? "Spring" : iconName;
+				iconName = name === "Express.js" ? "Express" : iconName;
 				const Icon = SKILLS_ICONS[iconName];
 
 				return (

@@ -3,7 +3,7 @@ import Section from "./Section.astro";
 import { basics } from "@/data/cv.json";
 import WorldMap from "@/icons/WorldMap.astro";
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, label2, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
 
 const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
@@ -17,6 +17,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 		<div class="info">
 			<h1>{name}</h1>
 			<h2>{label}</h2>
+			<h2 class="-mt-2">{label2}</h2>
 			<div class="flex items-center gap-2 pt-2 text-sm text-skin-muted">
 				<WorldMap />
 				{city}, {region}
