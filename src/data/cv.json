@@ -2,7 +2,7 @@
   "basics": {
     "name": "Raúl Quimbaya",
     "label": "Ingeniero de Sistemas -",
-    "label2": "Frontend & Full Stack Developer",
+    "label2": "Desarrollador de Software",
     "image": "/foto-perfil.webp",
     "email": "raulquimbaya4@gmail.com",
     "phone": "+57 3153090045",
@@ -28,6 +28,35 @@
     ]
   },
   "work": [
+    {
+      "name": "BS INGENIERIA S.A.S",
+      "position": "Desarrollador de Software",
+      "location_type": "Hibrido",
+      "location": "Ibagué, Colombia",
+      "url": "",
+      "startDate": "Marzo 2025",
+      "endDate": "Octubre 2025",
+      "summary": "Me desempeñé como desarrollador de software en BS Ingeniería S.A.S, apoyando la digitalización y optimización de procesos internos mediante el desarrollo de aplicaciones web. Participé en la creación de soluciones tecnológicas para la gestión de información técnica y administrativa.",
+      "highlights": [
+        "Desarrollo de aplicaciones web internas para la gestión de proyectos de ingeniería.",
+        "Implementación de interfaces para la administración de información técnica y operativa.",
+        "Integración de aplicaciones con bases de datos y servicios backend.",
+        "Automatización de flujos de trabajo internos."
+      ],
+      "responsibilities": [
+        "Desarrollar y mantener aplicaciones web internas para la gestión de proyectos.",
+        "Implementar interfaces web enfocadas en la organización y consulta de información.",
+        "Integrar aplicaciones web con bases de datos y servicios backend.",
+        "Automatizar procesos internos relacionados con el seguimiento de proyectos.",
+        "Brindar soporte y mejora continua a las herramientas tecnológicas utilizadas por la empresa."
+      ],
+      "achievements": [
+        "Apoyo a la transformación digital de procesos internos de la empresa.",
+        "Automatización de flujos de trabajo, reduciendo tareas manuales.",
+        "Implementación de soluciones web funcionales y alineadas con las necesidades del negocio."
+      ],
+      "skills": ["JavaScript", "TypeScript", "React", "MySQL", "HTML", "CSS", "Tailwind CSS", "Git", "GitHub"]
+    },
     {
       "name": "No Country",
       "position": "Desarrollador Front-End",
@@ -58,8 +87,37 @@
       "skills": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Git", "GitHub"]
     },
     {
+      "name": "LR ASESORIAS Y BENEFICIOS",
+      "position": "Desarrollador de Software",
+      "location_type": "Remoto",
+      "location": "Ibagué, Colombia",
+      "url": "",
+      "startDate": "Julio 2024",
+      "endDate": "Diciembre 2024",
+      "summary": "Trabajé como desarrollador de software en LR Asesorías y Beneficios, participando en el desarrollo y mantenimiento de aplicaciones web internas orientadas a la gestión de procesos administrativos y de asesoría. Mi enfoque estuvo en la creación de soluciones funcionales que optimizaran los flujos de trabajo y mejoraran la eficiencia operativa.",
+      "highlights": [
+          "Desarrollo de aplicaciones web internas para la gestión de procesos administrativos.",
+          "Implementación de interfaces para el registro, consulta y administración de información.",
+          "Automatización de procesos internos y generación de reportes.",
+          "Mejora continua de herramientas tecnológicas utilizadas por las áreas administrativas."
+      ],
+      "responsibilities": [
+          "Desarrollar y mantener aplicaciones web internas para la gestión de proyectos y procesos administrativos.",
+          "Diseñar e implementar interfaces web orientadas a la usabilidad y claridad de la información.",
+          "Integrar aplicaciones web con bases de datos y servicios backend.",
+          "Automatizar flujos de trabajo internos para optimizar tiempos y recursos.",
+          "Brindar soporte y mantenimiento a las soluciones tecnológicas existentes."
+      ],
+      "achievements": [
+          "Optimización de procesos administrativos mediante herramientas web internas.",
+          "Automatización de tareas repetitivas, mejorando la eficiencia operativa.",
+          "Implementación de soluciones estables y fáciles de usar para usuarios internos."
+      ],
+      "skills": ["JavaScript", "TypeScript", "PHP", "HTML", "CSS", "Git", "GitHub"]
+      },
+    {
       "name": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
-      "position": "Desarrollador Web",
+      "position": "Desarrollador de Software",
       "location_type": "Remoto",
       "location": "Espinal, Colombia",
       "url": "",
@@ -86,7 +144,7 @@
     },
     {
       "name": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
-      "position": "Desarrollador Web",
+      "position": "Desarrollador de Software",
       "location_type": "Remoto",
       "location": "Espinal, Colombia",
       "url": "",
