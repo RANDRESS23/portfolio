@@ -44,11 +44,12 @@
         "Automatización de flujos de trabajo internos."
       ],
       "responsibilities": [
-        "Desarrollar y mantener aplicaciones web internas para la gestión de proyectos.",
-        "Implementar interfaces web enfocadas en la organización y consulta de información.",
-        "Integrar aplicaciones web con bases de datos y servicios backend.",
-        "Automatizar procesos internos relacionados con el seguimiento de proyectos.",
-        "Brindar soporte y mejora continua a las herramientas tecnológicas utilizadas por la empresa."
+        "Desarrollé y di mantenimiento a aplicaciones web internas para la gestión de proyectos de ingeniería, utilizando React, Node.js y Tailwind CSS, mejorando la eficiencia en los procesos operativos y administrativos.",
+        "Diseñé e implementé interfaces web enfocadas en usabilidad y rendimiento, aplicando componentes reutilizables, optimización de renders y consumo eficiente de APIs.",
+        "Integré la aplicación con bases de datos PostgreSQL, modelando tablas, optimizando consultas y utilizando índices para mejorar los tiempos de respuesta en reportes y paneles administrativos.",
+        "Implementé APIs REST en Node.js con arquitectura modular, manejo de errores centralizado, validación de datos y autenticación mediante JWT para separar accesos entre administradores y personal técnico.",
+        "Apoyé el despliegue y la infraestructura configurando entornos en AWS, además de crear contenedores con Docker para estandarizar entornos y facilitar pruebas y despliegues.",
+        "Realicé soporte técnico, mejora continua y pequeñas refactorizaciones en el sistema, garantizando la estabilidad, rendimiento y mantenibilidad de las herramientas utilizadas por los equipos técnico y administrativo."
       ],
       "achievements": [
         "Apoyo a la transformación digital de procesos internos de la empresa.",
@@ -73,11 +74,12 @@
         "Optimización de la experiencia del usuario para una navegación intuitiva y eficiente."
       ],
       "responsibilities": [
-        "Diseñar y desarrollar la interfaz de usuario para los roles de reclutador y candidato.",
-        "Implementar la lógica de negocio en el frontend para la publicación de ofertas y gestión de postulaciones.",
-        "Realizar la integración con la API REST desarrollada en Django, asegurando la correcta comunicación entre frontend y backend.",
-        "Optimizar el rendimiento y la accesibilidad de la aplicación.",
-        "Colaborar con el equipo de backend para garantizar la correcta implementación de los flujos de datos."
+        "Diseñé y desarrollé interfaces dinámicas para los roles de reclutador y candidato, implementando componentes reutilizables en React y estilos con Tailwind CSS, asegurando una navegación fluida y accesible.",
+        "Implementé la lógica de negocio en el frontend para funcionalidades clave como publicación de ofertas, gestión de postulaciones y seguimiento de candidatos, integrando validaciones y flujos responsivos.",
+        "Integré la aplicación con una API REST en Django, consumiendo endpoints documentados, manejando estados de carga, errores, paginación y sincronización de datos con Axios.",
+        "Realicé optimizaciones de rendimiento aplicando técnicas como memoización, lazy loading de componentes y reducción de renders innecesarios, obteniendo mejores métricas en Lighthouse.",
+        "Colaboré con el equipo backend para definir modelos de datos, endpoints necesarios y flujos de interacción, asegurando consistencia entre frontend, API y base de datos.",
+        "Contribuí a la mejora de accesibilidad y usabilidad mediante buenas prácticas de UX/UI, incluyendo jerarquía visual, formularios accesibles, estructuras semánticas y soporte para dispositivos móviles."
       ],
       "achievements": [
         "Entrega exitosa del MVP con una interfaz funcional y responsive.",
@@ -102,11 +104,12 @@
           "Mejora continua de herramientas tecnológicas utilizadas por las áreas administrativas."
       ],
       "responsibilities": [
-          "Desarrollar y mantener aplicaciones web internas para la gestión de proyectos y procesos administrativos.",
-          "Diseñar e implementar interfaces web orientadas a la usabilidad y claridad de la información.",
-          "Integrar aplicaciones web con bases de datos y servicios backend.",
-          "Automatizar flujos de trabajo internos para optimizar tiempos y recursos.",
-          "Brindar soporte y mantenimiento a las soluciones tecnológicas existentes."
+          "Desarrollé y mantuve aplicaciones web internas para la administración de clientes, pólizas y procesos administrativos, utilizando React, JavaScript y Tailwind CSS, mejorando la eficiencia en tareas operativas del equipo administrativo.",
+          "Construí interfaces web dinámicas basadas en componentes reutilizables, implementando formularios, validaciones y flujos de consulta y actualización de datos con un enfoque en usabilidad y rendimiento.",
+          "Integré las aplicaciones con bases de datos PostgreSQL mediante APIs en Node.js, diseñando consultas optimizadas y asegurando la consistencia de la información en los módulos internos.",
+          "Implementé autenticación y autorización basada en JWT para controlar el acceso a información sensible y separar roles entre personal administrativo y supervisores.",
+          "Realicé soporte técnico, correcciones de bugs y ajustes de rendimiento, además de aplicar mejora continua en la arquitectura del frontend y backend.",
+          "Trabajé de la mano con el equipo administrativo en el levantamiento de requerimientos, análisis funcional y definición de soluciones, logrando implementaciones alineadas a las necesidades reales del negocio."
       ],
       "achievements": [
           "Optimización de procesos administrativos mediante herramientas web internas.",
@@ -130,11 +133,12 @@
         "Desarrollo de rutas API en Next.js para conectar la base de datos con la aplicación web."
       ],
       "responsibilities": [
-        "Diseñar e implementar módulos funcionales del aplicativo web.",
-        "Modelar y configurar la base de datos utilizando PostgreSQL y Supabase.",
-        "Desarrollar rutas API en Next.js para la integración con la base de datos.",
-        "Implementar un sistema de roles con permisos personalizados (estudiante, empleado, administrador).",
-        "Realizar pruebas exhaustivas para garantizar la calidad y funcionalidad del aplicativo."
+        "Diseñé e implementé los módulos funcionales del aplicativo web institucional utilizando Next.js, creando interfaces dinámicas, componentes reutilizables y flujos orientados a una experiencia de usuario clara y eficiente.",
+        "Modelé y configuré la base de datos con PostgreSQL y Supabase, definiendo esquemas relacionales, claves foráneas, vistas y reglas de seguridad para garantizar un almacenamiento eficiente y consistente.",
+        "Desarrollé rutas API en Next.js (API Routes) para conectar el frontend con la base de datos, aplicando validación de datos, manejo de errores, autenticación y consultas optimizadas.",
+        "Implementé un sistema de roles y permisos personalizados (estudiante, empleado, administrador), controlando accesos mediante middlewares, validación por token y renderizado condicional en la UI.",
+        "Realicé pruebas funcionales de cada módulo (creación, edición, listados, control de acceso) y validé el rendimiento de consultas en Supabase para asegurar la integridad y calidad del sistema.",
+        "Documenté endpoints, modelos y flujos del sistema, permitiendo mejorar la mantenibilidad y escalabilidad del proyecto."
       ],
       "achievements": [
         "Optimización del flujo de trabajo mediante un sistema de permisos bien estructurado.",
@@ -157,11 +161,11 @@
         "Implementación de rutas API en Next.js para mejorar la comunicación entre cliente y servidor."
       ],
       "responsibilities": [
-        "Trabajar en equipo para construir y personalizar los módulos clave del sitio web.",
-        "Diseñar y gestionar la estructura de la base de datos en MongoDB Atlas.",
-        "Implementar rutas API en Next.js para la comunicación entre cliente y servidor.",
-        "Configurar roles con diferentes niveles de acceso (usuario, administrador) para mejorar la experiencia del usuario.",
-        "Validar cada módulo mediante pruebas detalladas para asegurar el cumplimiento de los requerimientos técnicos."
+        "Construí y personalicé los módulos principales del sistema utilizando Next.js, implementando componentes dinámicos, validaciones, flujos de registro y vistas adaptadas a los distintos perfiles de usuario.",
+        "Diseñé y administré la base de datos en MongoDB Atlas, creando colecciones, índices, relaciones por referencia y reglas de acceso que garantizaron un manejo eficiente y seguro de la información financiera.",
+        "Implementé rutas API en Next.js (API Routes) para la comunicación cliente-servidor, aplicando manejo de errores, validación de datos y consultas optimizadas mediante el driver de MongoDB.",
+        "Configuré un sistema de roles y permisos (usuario, administrador) mediante validación por token, middleware de protección de endpoints y renderizado condicional en la interfaz.",
+        "Validé cada módulo con pruebas funcionales y técnicas (operaciones CRUD, autenticación, restricciones por rol y manejo de estados), asegurando el cumplimiento de los requerimientos del sistema."
       ],
       "achievements": [
         "Optimización del flujo de trabajo en equipo mediante una arquitectura bien estructurada.",
@@ -179,6 +183,20 @@
       "studyType": "Tecnólogo",
       "startDate": "Febrero 2021",
       "endDate": "Diciembre 2025",
+      "score": "5.0",
+      "courses": [
+        "Análisis y Diseño de Algoritmos (ADA)",
+        "Desarrollo Avanzado de Software (SO)",
+        "Bases de Datos (BD)"
+      ]
+    },
+    {
+      "institution": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
+      "url": "",
+      "area": "Diplomado en Seguridad Informática de Datos",
+      "studyType": "Tecnólogo",
+      "startDate": "Abril 2025",
+      "endDate": "Noviembre 2025",
       "score": "5.0",
       "courses": [
         "Análisis y Diseño de Algoritmos (ADA)",
