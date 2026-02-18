@@ -28,53 +28,64 @@ import SQLite from "@/icons/SQLite.astro";
 import Supabase from "@/icons/Supabase.astro";
 import Jira from "@/icons/Jira.astro";
 import Docker from "@/icons/Docker.astro";
+import AWS from "@/icons/AWS.astro";
+import GoogleCloud from "@/icons/GoogleCloud.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
-	HTML,
-	CSS,
-	JavaScript,
-	TypeScript,
-    PHP,
-    Python,
-	React,
-	Node,
-    Express,
-    Laravel,
-	MySQL,
-    SQLite,
-    Supabase,
-	Git,
-	GitHub,
-	Next,
-	Tailwind,
-	Gitlab,
-	Java,
-	Sql,
-	Angular,
-	Astro: AstroIcon,
-	Spring,
-	MongoDB,
-	PostgreSQL,
-    Jira,
-    Docker
+  HTML,
+  CSS,
+  JavaScript,
+  TypeScript,
+  PHP,
+  Python,
+  React,
+  Node,
+  Express,
+  Laravel,
+  MySQL,
+  SQLite,
+  Supabase,
+  Git,
+  GitHub,
+  Next,
+  Tailwind,
+  Gitlab,
+  Java,
+  Sql,
+  Angular,
+  Astro: AstroIcon,
+  Spring,
+  MongoDB,
+  PostgreSQL,
+  Jira,
+  Docker,
+  AWS,
+  GoogleCloud,
 };
 ---
 
-<Section id="skills" className={`${Astro.props.className} md:py-20`} title="Skills">
-	<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
-		{
-			skills.map(({ name }) => {
-				let iconName = name === "Next.js" ? "Next" : name;
-				iconName = name === "Spring Boot" ? "Spring" : iconName;
-				iconName = name === "Express.js" ? "Express" : iconName;
-				const Icon = SKILLS_ICONS[iconName];
+<Section
+  id="skills"
+  className={`${Astro.props.className} md:py-20`}
+  title="Skills"
+>
+  <ul
+    class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm"
+  >
+    {
+      skills.map(({ name }) => {
+        let iconName = name === "Next.js" ? "Next" : name;
+        iconName = name === "Spring Boot" ? "Spring" : iconName;
+        iconName = name === "Express.js" ? "Express" : iconName;
+        iconName = name === "Google Cloud" ? "GoogleCloud" : iconName;
+        const Icon = SKILLS_ICONS[iconName];
 
-				return (
-					<li class="border-skin-hue/20s bg-skin-button-accent/20s borders border-solids flex items-center gap-1 rounded-md px-2 py-0.5 text-xs text-skin-muted print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
-						{Icon && <Icon />} <span>{name}</span>
-					</li>
-				);
-			})
-		}
-	</ul>
+        return (
+          <li class="border-skin-hue/20s bg-skin-button-accent/20s borders border-solids flex items-center gap-1 rounded-md px-2 py-0.5 text-xs text-skin-muted print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
+            {Icon && <Icon />} <span>{name}</span>
+          </li>
+        );
+      })
+    }
+  </ul>
 </Section>

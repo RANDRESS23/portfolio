@@ -56,7 +56,7 @@
         "Automatización de flujos de trabajo, reduciendo tareas manuales.",
         "Implementación de soluciones web funcionales y alineadas con las necesidades del negocio."
       ],
-      "skills": ["JavaScript", "TypeScript", "React", "MySQL", "HTML", "CSS", "Tailwind CSS", "Git", "GitHub"]
+      "skills": ["React", "Node", "JavaScript", "TypeScript", "PostgreSQL", "HTML", "CSS", "Tailwind CSS", "Docker", "AWS", "Git", "GitHub"]
     },
     {
       "name": "No Country",
@@ -116,7 +116,7 @@
           "Automatización de tareas repetitivas, mejorando la eficiencia operativa.",
           "Implementación de soluciones estables y fáciles de usar para usuarios internos."
       ],
-      "skills": ["JavaScript", "TypeScript", "PHP", "HTML", "CSS", "Git", "GitHub"]
+      "skills": ["React", "JavaScript", "TypeScript", "HTML", "CSS", "Tailwind CSS", "Git", "GitHub", "Docker", "Node", "PostgreSQL", "MongoDB"]
       },
     {
       "name": "Instituto Tolimense de Formación Técnica Profesional (ITFIP)",
@@ -475,6 +475,26 @@
     },
     {
       "name": "Docker",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "AWS",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "Google Cloud",
       "level": "Intermediate",
       "keywords": [
         "Version Control",
